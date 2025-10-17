@@ -1,0 +1,19 @@
+{
+  "name": "ai-peer-review",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "review": "node dist/review.js",
+    "comment": "node dist/comment.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.10",
+    "typescript": "^5.6.3"
+  }
+}
